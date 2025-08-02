@@ -1,6 +1,6 @@
 import { authService } from "./auth-service"
 
-const API_BASE_URL = "http://192.168.1.49:8000"
+const API_BASE_URL = "https://drivestorage-api-v2.onrender.com"
 
 // Types pour les fichiers et dossiers - MISE À JOUR selon votre structure
 export interface DirectoryItem {

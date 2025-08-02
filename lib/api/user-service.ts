@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://192.168.1.49:8000"
+const API_BASE_URL = "https://drivestorage-api-v2.onrender.com"
 
 // Types pour les requêtes et réponses
 export interface UserCreateRequest {
@@ -29,7 +29,7 @@ export const userService = {
   // Inscription d'un nouvel utilisateur
   register: async (userData: UserCreateRequest): Promise<UserResponse> => {
     try {
-      const response = await fetch(`${API_BASE_URL}/users/register`, {
+      const response = await fetch(`${API_BASE_URL}/users/create`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
